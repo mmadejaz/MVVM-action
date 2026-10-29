@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MVVM_action.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MVVM_action.Views"
+    Title="MVVM_action"
+    FlyoutBehavior="Flyout">
+
+    <ShellContent
+        Title="Home"
+        Icon="dotnet_bot.png"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+        Icon="appicon.png"
+        Title="Person"
+        ContentTemplate="{DataTemplate local:PersonView}"
+        Route="PersonView" />
+    <ShellContent
+        Icon="da.png"
+        Title="Card"
+        ContentTemplate="{DataTemplate local:CardView}"
+        Route="CardView" />    
+
+</Shell>
